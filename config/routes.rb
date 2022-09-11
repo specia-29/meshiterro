@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'post_images/new'
-  get 'post_images/index'
-  get 'post_images/show'
   root 'homes#top'
   get '/about', to: 'homes#about'
   devise_for :users

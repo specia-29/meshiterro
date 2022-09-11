@@ -40,8 +40,7 @@ ActiveRecord::Schema.define(version: 2022_09_10_033400) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "post_images", id: false, force: :cascade do |t|
-    t.integer "id"
+  create_table "post_images", force: :cascade do |t|
     t.string "shop_name"
     t.text "caption"
     t.integer "user_id"
